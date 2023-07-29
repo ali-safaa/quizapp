@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-800">
+    <div data-container class="grid items-center justify-center">
+      <h2
+        data-question
+        class="text-white mt-8 font-semibold text-xl text-center"
+      ></h2>
+      <div
+        class="bg-white pl-[70px] grid grid-cols-2 sm:pl-[145px] sm:w-[600px] w-[400px] mt-[100px] rounded-md py-5"
+      >
+        <div class="pb-8">
+          <input data-radio type="radio" id="a" name="option" />
+          <label data-text_1 class="text-xl cursor-pointer" for="a"></label>
+        </div>
+
+        <div>
+          <input data-radio type="radio" id="b" name="option" />
+          <label data-text_2 class="text-xl cursor-pointer" for="b"></label>
+        </div>
+
+        <div>
+          <input data-radio type="radio" id="c" name="option" />
+          <label data-text_3 class="text-xl cursor-pointer" for="c"></label>
+        </div>
+
+        <div>
+          <input data-radio type="radio" id="d" name="option" />
+          <label data-text_4 class="text-xl cursor-pointer" for="d"></label>
+        </div>
+
+        <button
+          data-next
+          class="cursor-pointer text-xl ml-[85px] px-8 sm:ml-[110px] bg-blue-500 w-max rounded-md text-white font-semibold mt-10"
+        >
+          next
+        </button>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
